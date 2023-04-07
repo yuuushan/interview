@@ -1,0 +1,21 @@
+.md-sidebar--primary,
+.md-sidebar--primary .md-nav--primary {
+  width: 300px;
+}
+
+.md-sidebar--secondary .md-sidebar__scrollwrap {
+  border-left: 1px solid #e0e0e0;
+}
+
+.md-sidebar--secondary,
+.md-sidebar--secondary .md-nav--secondary {
+  width: 450px;
+}
+
+.md-sidebar--secondary .md-nav__list {
+  font-size: 14px;
+}
+
+.md-grid {
+  max-width: initial;
+}
