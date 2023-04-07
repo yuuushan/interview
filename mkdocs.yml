@@ -37,10 +37,10 @@ nav:
       - go/go-type.md
       - go/go-concurrency.md
   - MySQL:
-      - MySQL/01-sql.md
-      - MySQL/02-mysql.md
+      - mysql/sql.md
+      - mysql/mysql.md
   - Redis:
-      - Redis/index.md
+      - redis/index.md
   - 前端:
       - frontend/vue.md
   - 网络:
