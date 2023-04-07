@@ -41,6 +41,8 @@ nav:
       - MySQL/02-mysql.md
   - Redis:
       - Redis/index.md
+  - 前端:
+      - frontend/vue.md
   - 网络:
       - networking/01-base.md
       - networking/02-http.md
