@@ -46,4 +46,4 @@ Channel 是并发安全的，因为其在发送和接收时都加锁了。
 ## Go 中 goroutine 如何退出
 
 1. 通过向 goroutine 传入一个 channel 来通知 goroutine 退出。
-2. 通过 context 上下文（`context.Done()`）通知 goroutine 退出。
+2. 通过 context 上下文 (`context.Done()`) 通知 goroutine 退出。
