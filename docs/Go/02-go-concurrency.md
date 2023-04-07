@@ -34,16 +34,16 @@ Channel 是并发安全的，因为其在发送和接收时都加锁了。
   - `func (rw *RWMutex) RLock()`: 读锁定
   - `func (rw *RWMutex) RUnlock()`: 读解锁
 
-### 互斥锁和读写互斥锁的区别
+### 互斥锁和读写互斥锁有哪些区别？
 
 - 当一个 goroutine 获取读锁之后，其他的 goroutine 如果获取读锁会直接获得，如果获取写锁会等待。
 - 当一个 goroutine 获取写锁之后，其他的 goroutine 无论获取读锁还是写锁都会等待。
 
-#### 两者的使用场景
+### 互斥锁和读写互斥锁的使用场景是什么？
 
 读写锁非常适合读多写少的场景，如果读和写的操作差别不大，读写锁的优势就发挥不出来。
 
 ## Go 中 goroutine 如何退出
 
-1. 协程外 select 协程的 done channel 和 `time.After()`；协程内完成后通过 `select` 尝试发送 done channel。
-2. 使用 context 通知协程结束。
+1. 通过向 goroutine 传入一个 channel 来通知 goroutine 退出。
+2. 通过 context 上下文（`context.Done()`）通知 goroutine 退出。
