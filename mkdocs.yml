@@ -30,3 +30,16 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - mdx_truly_sane_lists
+
+nav:
+  - index.md
+  - Go:
+      - Go/01-go-type.md
+      - Go/02-go-concurrency.md
+  - MySQL:
+      - MySQL/01-sql.md
+      - MySQL/02-mysql.md
+  - Redis:
+      - Redis/index.md
+  - 网络:
+      - networking/01-base.md
