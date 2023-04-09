@@ -39,6 +39,8 @@ nav:
   - MySQL:
       - mysql/sql.md
       - mysql/mysql.md
+      - mysql/locking.md
+      - mysql/transaction.md
   - Redis:
       - redis/index.md
   - 前端:
