@@ -14,6 +14,13 @@ ch = make(chan int, 0)  // 无缓冲通道
 ch = make(chan int, 3)  // 容量为 3 的缓冲通道
 ```
 
+### 读写、关闭已关闭的 channel，会发生什么？
+
+1. 读已关闭的 channel 时，如果 channel 内有元素，正常读；如果 channel 内没有元素，读到空值。
+2. 读未关闭的空 channel 时，会报死锁的错误。
+3. 写已关闭的 channel 时，会引发 panic。
+4. 关闭已关闭的 channel 时，会引发 panic。
+
 ### Channel 是否并发安全？
 
 Channel 是并发安全的，因为其在发送和接收时都加锁了。
