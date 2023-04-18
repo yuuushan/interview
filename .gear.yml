@@ -1,14 +1,14 @@
 commit:
-  disable-scope: false
-  disable-body: true
-  disable-footer: true
+  enable-scope: false
+  message-template: "{{.Type}} {{if .Scope}}({{.Scope}}): {{end}}{{.Summary}}"
   types:
     - text: 📝
       note: "对文档内容的修改"
+      enable-scope: true
     - text: 🔧
       note: "对除 CI、文档内容外的修改，比如 gear 配置文件"
     - text: 👷
       note: "对 CI 内容的修改，比如 .github 下的内容"
     - text: 🎨
       note: "对文档风格的修改，没有造成内容的增减，比如调整文档结构、分类等"
-  message-template: "{{.Type}} {{if .Scope}}({{.Scope}}): {{end}}{{.Summary}}"
+      enable-scope: true

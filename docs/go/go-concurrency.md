@@ -4,9 +4,13 @@
 
 ### Channel 的分类
 
+根据传输方向分类：
+
 1. `chan T`: 可以接收和发送
 2. `chan<- T`: 只可以发送
 3. `<-chan T`: 只可以接收
+
+根据通道容量分类：
 
 ```go
 ch = make(chan int)     // 无缓冲通道
@@ -14,7 +18,7 @@ ch = make(chan int, 0)  // 无缓冲通道
 ch = make(chan int, 3)  // 容量为 3 的缓冲通道
 ```
 
-### 读写、关闭已关闭的 channel，会发生什么？
+### ✨ 读写、关闭已关闭的 channel，会发生什么？
 
 1. 读已关闭的 channel 时，如果 channel 内有元素，正常读；如果 channel 内没有元素，读到空值。
 2. 读未关闭的空 channel 时，会报死锁的错误。
