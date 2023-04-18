@@ -34,8 +34,8 @@ markdown_extensions:
 nav:
   - index.md
   - Go:
-      - go/go-type.md
-      - go/go-concurrency.md
+      - go/type.md
+      - go/concurrency.md
   - MySQL:
       - mysql/sql.md
       - mysql/mysql.md
